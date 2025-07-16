@@ -1,0 +1,13 @@
+[project]
+authors = ["yasmina <ferieldjelilyasmina@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "las_to_geotiff"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+pdal = ">=2.8.4,<3"
+gdal = ">=3.11.3,<4"
