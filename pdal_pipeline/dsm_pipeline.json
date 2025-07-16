@@ -1,0 +1,15 @@
+[
+    {
+        "type": "readers.las",
+        "filename": "$input"
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "$output",
+        "data_type": "Float32",
+        "gdaldriver": "GTiff",
+        "resolution": 1,
+        "output_type": "mean",
+        "nodata": -9999
+    }
+    ]

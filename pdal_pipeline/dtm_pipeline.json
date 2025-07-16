@@ -1,0 +1,26 @@
+[
+    {
+        "type": "readers.las",
+        "filename": "$input"
+    },
+    {
+        "type": "filters.smrf",
+        "window": 16.0
+    },
+    {
+        "type": "filters.hag_nn"
+    },
+    {
+        "type": "filters.range",
+        "limits": "classification[2:2]"
+    },
+    {
+        "type": "writers.gdal",
+        "filename": "$output",
+        "data_type": "Float32",
+        "gdaldriver": "GTiff",
+        "resolution": 1,
+        "output_type": "mean",
+        "nodata": -9999
+    }
+    ]
